@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
@@ -27,7 +28,7 @@ function App() {
     return (
       <BrowserRouter>
         <Navbar />
-        <Sidebar />
+        {/* <Sidebar /> */}
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/myorders" element={<MyOrders />} />
