@@ -2,6 +2,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import rootReducer from './rootReducer';
 import createSagaMiddleware from '@redux-saga/core';
 import authSaga from './Auth/saga';
+import homeSaga from './Home/saga';
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -13,3 +14,4 @@ export default configureStore({
 );
 
 sagaMiddleware.run(authSaga);
+sagaMiddleware.run(homeSaga);

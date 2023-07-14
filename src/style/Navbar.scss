@@ -14,3 +14,64 @@
   border-radius: 12px;
   outline: none;
 }
+
+.Navbar__tooltip_items.cart {
+  width: 300px;
+}
+
+.Navbar__tooltip_items a {
+  text-decoration: none;
+}
+
+.Navbar__tooltip_item {
+  // border: 1px solid red;
+}
+
+.Navbar__tooltip_item:hover {
+  background-color: rgba(241, 241, 241, 0.4);
+}
+
+.Navbar__tooltip_toggle_icon {
+  color: black;
+}
+
+.Navbar__tooltip_toggle_icon:hover {
+  cursor: pointer;
+}
+
+.Navbar__innerContainer_right {
+  display: flex;
+}
+
+.Navbar__tooltip_icon_num_batch {
+  background-color: red;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  // padding: 3px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.Navbar__tooltip_icon_num_batch.custom-position {
+  margin-left: -10px;
+  margin-top: -35px;
+}
+
+.Navbar__tooltip_cart_item {
+  font-weight: bold;
+  display: flex;
+}
+
+.Navbar__tooltip_cart_item_left {
+  flex: 1;
+}
+
+.Navbar__tooltip_cart_item_delete {
+  align-self: center;
+}
